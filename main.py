@@ -15,9 +15,10 @@
 #     NOTE: The first two lines in the file represent the numbers in the example given above.
 
 from math import log
+from typing import Tuple
 
 
-def main(filename):
+def main(filename: str) -> Tuple[int, int, int]:
     """
     Given a text file `filename`, where each line containing a base/exponent pair (`b` and `e`),
       return the line number for which the number b^e is greatest,
